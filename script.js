@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             db = window.db;
             firebase = window.firebaseModules;
+            if (!db || !firebase) {
+                throw new Error('Firebase não inicializado corretamente.');
+            }
             return true;
         } catch (error) {
             console.error('Erro ao inicializar Firebase:', error);
