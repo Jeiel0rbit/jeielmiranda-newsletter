@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f2f5;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 20rem;
+    max-width: auto;
+    text-align: center;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+.input-container .icon {
+    margin: 0 8px;
+}
+
+input {
+    border: none;
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Estilos do card de feedback */
+.feedback-card {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #e3f4ff;
+    border: 1px solid #007bff;
+    color: #007bff;
+    font-size: 14px;
+    display: none; /* Inicialmente oculto */
+}
+
+.feedback-card.error {
+    background: #ffe3e3;
+    border-color: #ff4d4d;
+    color: #ff4d4d;
+}
+
+.feedback-card.success {
+    background: #e3f4ff;
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.hidden {
+    display: none;
+}

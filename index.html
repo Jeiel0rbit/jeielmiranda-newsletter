@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Newsletter</title>
+    <link rel="stylesheet" href="style.css">
+<!-- Substitua o script do Firebase por: -->
+<script type="module" src="/firebase-init.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://avatars.githubusercontent.com/u/72875404?s=400&u=2dbb1a329b9b8e5dd524a8014c926457c7de34dc&v=4" 
+             alt="Avatar" class="avatar">
+        <h3>Notícias de Tecnologia para quem não tem tempo de ler notícias.</h3>
+        <p>Junte-se à nossa turma de <strong id="leitoresAtivos">0</strong> leitores ativos:</p>
+        <form class="form">
+            <div class="input-container">
+                <span class="icon">📩</span>
+                <input type="email" placeholder="Seu email principal" required>
+            </div>
+            <button type="submit">Inscrever-se (Grátis)</button>
+        </form>
+
+        <!-- Card de feedback -->
+        <div id="feedbackCard" class="feedback-card hidden">
+            <p id="feedbackMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
